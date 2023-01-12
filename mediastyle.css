@@ -1,0 +1,158 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+.header{ 
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 0 8%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 140px;
+}
+.nav-links{
+    display:flex;
+    list-style: none;
+    padding: 28px 0;
+    align-items: center;
+}
+.nav-links li{
+    margin: 0 15px;
+    display: inline-block;
+}
+.nav-links li a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 0;
+    position: relative;
+}
+
+.nav-links li a::before{
+    content:' ';
+    background: #ff3d00;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /* transition: widht 0.5s; */
+}
+.nav-links li a:hover::before{
+    width: 100%;
+    transition: 0.5s;
+}
+
+.btn{
+    background: #ff3d00;
+    color: white;
+    padding: 9px 39px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 2px solid #ff3d00;
+}
+.btn:hover{
+    background: transparent;
+    color: white;
+    border: 2px solid #ff3d00;
+    transition: 0.4s;
+}
+.contain{
+    position: absolute;
+    align-items: center;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 50px;
+}
+.contain h1{
+   font-size: 65px;
+   margin-bottom: 40px;
+   font-weight: 600;
+}
+.contain form{
+    background: white;
+    padding: 10px;
+    border-radius: 50px;
+    display: flex;
+    
+}
+.contain form input{
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 0 20px;
+    opacity: 0.7;
+}
+.contain form button{
+    background: #ff3d00;
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+}
+.category-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;  
+}
+.catetory{
+    width: 90px;
+    height: 90px;
+    border-radius: 50px;
+    background:rgba(255, 64, 0, 0.15);
+    margin: 0 12px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.catetory img{
+    width: 25px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+.catetory p{
+    text-align: center;
+    font-size: 12px;
+}
+
+.back-video{
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height:auto;  
+    z-index: -1;
+    right: 0;
+    bottom: 0;
+    object-fit: cover;
+} 
+
+/* @media (min-aspect-ratio: 16/9) {
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (min-aspect-ratio: 16/9) {
+    .back-video{
+        width: auto;
+        height: 100%;
+    }
+} */
+
